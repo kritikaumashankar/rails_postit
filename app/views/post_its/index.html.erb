@@ -1,7 +1,11 @@
+
 <h1>PostIts</h1>
 <%=link_to 'New PostIt', new_post_it_path %>
 <% @post_its.each do |post|%>
  <ul> 
- <li><h2> <%= link_to post.title, post_it_path(post) %> </h2></li>
+ <li><h2> <%= link_to post.title, post_it_path(post.id)%>   
+     <%= link_to 'Edit', edit_post_it_path(post) %>
+     <%= link_to 'Delete', post, method: :delete %></h2>
+ 
  </ul>
 <% end %>
