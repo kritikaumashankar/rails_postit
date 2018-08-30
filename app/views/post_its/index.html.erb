@@ -1,0 +1,7 @@
+<h1>PostIts</h1>
+<%=link_to 'New PostIt', new_post_it_path %>
+<% @post_its.each do |post|%>
+ <ul> 
+ <li><h2> <%= link_to post.title, post_it_path(post) %> </h2></li>
+ </ul>
+<% end %>

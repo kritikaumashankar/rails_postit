@@ -1,0 +1,12 @@
+<%= form_for @post_it do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.label :completed %>
+  <%= f.text_field :completed %>
+
+  <%= f.submit %>
+<% end %>
