@@ -1,2 +1,0 @@
-class Postit < ApplicationRecord
-end
